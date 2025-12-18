@@ -1,36 +1,59 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
 .navbar {
-    background: #6b7b91;
-    color: white;
-    padding: 15px 40px;
+    background: white;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 16px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
 }
 
 .logo {
-    font-size: 22px;
-    font-weight: bold;
+    font-size: 24px;
+    font-weight: 800;
+    color: #f97316;
+    /* Orange Logo */
+    letter-spacing: -0.5px;
+    text-decoration: none;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 25px;
+    gap: 32px;
 }
 
 .nav-links li a {
-    color: white;
+    color: #4b5563;
     text-decoration: none;
     font-size: 16px;
+    font-weight: 500;
+    transition: color 0.2s;
 }
 
 .nav-links li a:hover {
-    text-decoration: underline;
+    color: #f97316;
+    /* Orange hover */
+}
+
+/* Compatibility with your existing usage which uses direct ul */
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+}
+
+.nav-list li a {
+    color: #4b5563;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.nav-list li a:hover {
+    color: #f97316;
 }

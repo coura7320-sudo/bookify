@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,6 +8,7 @@
   <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="navbar.css">
 </head>
+
 <body>
   <header class="navbar">
     <div class="logo">📚 Bookify</div>
@@ -16,28 +18,31 @@
     </ul>
   </header>
 
-  <main class="container">
-    <div id="book-detail" class="book-detail">
-      <div style="display:flex;gap:20px;align-items:flex-start;flex-wrap:wrap">
-        <img id="book-img" src="" alt="book image" style="max-width:200px;border-radius:8px">
-        <div style="flex:1;min-width:220px">
+  <main>
+    <div id="book-detail" class="book-detail-container">
+      <div class="book-content">
+        <img id="book-img" src="" alt="book image">
+        <div class="book-info">
           <h2 id="book-title"></h2>
-          <p id="book-author"></p>
-          <p>Price: <span id="book-price"></span> €</p>
+          <p id="book-author" class="author"></p>
+          <p class="price">Price: <span id="book-price"></span> €</p>
 
-          <label for="version-select">Version</label>
-          <select id="version-select"></select>
+          <div style="margin-bottom: 16px;">
+            <label for="version-select" style="font-weight:600;margin-right:8px">Version:</label>
+            <select id="version-select"></select>
+          </div>
 
-          <div style="margin-top:12px">
+          <div>
             <button id="addBtn">Add to Catalog</button>
-            <span id="add-confirm" style="margin-left:12px;opacity:0;transition:opacity .25s;color:#86efac"></span>
+            <span id="add-confirm"
+              style="margin-left:12px;opacity:0;transition:opacity .25s;color:#16a34a;font-weight:600">Added!</span>
           </div>
         </div>
       </div>
 
-      <section style="margin-top:18px">
+      <section class="book-summary">
         <h3>Summary</h3>
-        <p id="book-summary" style="opacity:0.95;line-height:1.5"></p>
+        <p id="book-summary"></p>
       </section>
 
       <aside id="preview" style="margin-top:18px"></aside>
@@ -46,4 +51,5 @@
 
   <script src="book.js"></script>
 </body>
+
 </html>
