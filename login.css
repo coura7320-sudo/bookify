@@ -7,7 +7,7 @@
 
 body {
     height: 100vh;
-    background-color: #f9fafb; /* Light clean background */
+    background-color: #f9fafb;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,7 +27,7 @@ body {
     max-width: 400px;
     border-radius: 16px;
     border: 1px solid #e5e7eb;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.05); /* Soft, subtle shadow */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 
 .box h2 {
@@ -50,7 +50,7 @@ input {
 
 input:focus {
     outline: none;
-    border-color: #f97316; /* Orange focus */
+    border-color: #f97316;
     background-color: white;
     box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.1);
 }
@@ -58,7 +58,7 @@ input:focus {
 button {
     width: 100%;
     padding: 12px;
-    background: #f97316; /* Vibrant Orange */
+    background: #f97316;
     color: white;
     border: none;
     border-radius: 10px;
@@ -69,7 +69,7 @@ button {
 }
 
 button:hover {
-    background: #ea580c; /* Darker orange on hover */
+    background: #ea580c;
 }
 
 button:active {

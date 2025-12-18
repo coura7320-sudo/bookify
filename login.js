@@ -5,7 +5,6 @@ const supabaseUrl = 'https://flmchlsezakjozkvtjzu.supabase.co'
 const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZsbWNobHNlemFram96a3Z0anp1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjYwNDMyMDgsImV4cCI6MjA4MTYxOTIwOH0.wJSKHZlYq5x6_yNjlDsV50CZtMbaE9pCJx_nOQgU2aI'
 const supabase = createClient(supabaseUrl, supabaseKey)
 
-// Register
 const registerForm = document.getElementById("registerForm");
 if (registerForm) {
     registerForm.addEventListener("submit", async (e) => {
@@ -41,7 +40,6 @@ if (registerForm) {
     });
 }
 
-// Login
 const loginForm = document.getElementById("loginForm");
 if (loginForm) {
     loginForm.addEventListener("submit", async (e) => {
